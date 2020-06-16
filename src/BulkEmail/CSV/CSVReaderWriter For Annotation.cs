@@ -8,9 +8,23 @@ namespace BulkEmail.CSV
 
         Please leave the rest of this file as it is so we can discuss your concerns during the next stage of the interview process.
         
-        *)
-        *)
-        *)
+        1) The name of file should be same as that of the class and it should not contain any spaces.
+        2) There should be adequate comments explaining the functionalities, it takes time to understand
+           the functionalities at the first place.
+        3) Read(string column1, string column2): In this function, the input parameters are not used at all.
+           So, it should be removed.
+        4) There are unnecessary variables in the method as well. It can be simplified like below:
+            public bool Read()
+            {
+                char separator = '\t';
+
+                return ReadLine().Split(separator).Length > 0;
+            }
+         5) The second Read function also has similar issues. But, now, I am wondering the use of this function.
+            From the name "Read", means it should return some string as output bu not sure why the output type is boolean.
+         6) The private variables for reading & writing streams should be initialized when the class is instantiated.
+            Now, it may throw Null Reference exception when calling some public methods directly.
+         7) While working with streams, it's better to use "using" statements and do the operations inside it.
     */
 
     public class CSVReaderWriterForAnnotation
