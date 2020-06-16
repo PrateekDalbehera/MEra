@@ -53,6 +53,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\Delimiter.cs" />
+    <Compile Include="CSV\CSVReader.cs" />
+    <Compile Include="CSV\CSVWriter.cs" />
+    <Compile Include="CSV\ICSVReader.cs" />
+    <Compile Include="CSV\ICSVWriter.cs" />
     <Compile Include="Processor\BulkEmailProcessor.cs" />
     <Compile Include="CSV\CSVReaderWriter For Annotation.cs" />
     <Compile Include="CSV\CSVReaderWriter.cs" />
